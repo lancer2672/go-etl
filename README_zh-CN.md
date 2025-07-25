@@ -45,7 +45,7 @@ go-etl将提供的etl能力如下：
 
 #### 从获取二进制程序开始
 
-可以在[最新发布版本](https://github.com/Breeze0806/go-etl/releases)下载到windows或者linux操作系统的64位版本二进制程序。
+可以在[最新发布版本](https://github.com/lancer2672/go-etl/releases)下载到windows或者linux操作系统的64位版本二进制程序。
 
 使用方式参考[go-etl数据同步用户手册](README_USER_zh-CN.md)开始数据同步。
 
@@ -81,8 +81,8 @@ docker exec -it etl bash
 
 ```bash
 cd ${GO_PATH}/src
-git clone https://github.com/Breeze0806/go-etl.git "github.com/Breeze0806/go-etl"
-cd github.com/Breeze0806/go-etl
+git clone https://github.com/lancer2672/go-etl.git "github.com/lancer2672/go-etl"
+cd github.com/lancer2672/go-etl
 make dependencies
 make release
 ```
@@ -94,8 +94,8 @@ make release
 ```bash
 export IGNORE_PACKAGES=db2
 cd ${GO_PATH}/src
-git clone https://github.com/Breeze0806/go-etl.git "github.com/Breeze0806/go-etl"
-cd github.com/Breeze0806/go-etl
+git clone https://github.com/lancer2672/go-etl.git "github.com/lancer2672/go-etl"
+cd github.com/lancer2672/go-etl
 make dependencies
 make release
 ```
@@ -112,8 +112,8 @@ make release
 
 ```bash
 cd ${GO_PATH}\src
-git clone https://github.com/Breeze0806/go-etl.git "github.com/Breeze0806/go-etl"
-cd github.com/Breeze0806/go-etl
+git clone https://github.com/lancer2672/go-etl.git "github.com/lancer2672/go-etl"
+cd github.com/lancer2672/go-etl
 release.bat
 ```
 
@@ -123,8 +123,8 @@ release.bat
 
 ```bash
 cd ${GO_PATH}\src
-git clone https://github.com/Breeze0806/go-etl.git "github.com/Breeze0806/go-etl"
-cd github.com/Breeze0806/go-etl
+git clone https://github.com/lancer2672/go-etl.git "github.com/lancer2672/go-etl"
+cd github.com/lancer2672/go-etl
 set IGNORE_PACKAGES=db2
 release.bat
 ```
@@ -156,7 +156,7 @@ release.bat
 
 使用命令获取`go-etl`项目,版本是`go-etl`的`v0.2.2`,
 ```bash
-git clone https://github.com/Breeze0806/go-etl.git
+git clone https://github.com/lancer2672/go-etl.git
 cd go-etl
 git describe --abbrev=0 --tags
 ```
@@ -250,18 +250,18 @@ go run tools/license/main.go
 
 [lang-img]:https://img.shields.io/badge/Language-Go-blue.svg
 [lang]:https://golang.org/
-[report-img]:https://goreportcard.com/badge/github.com/Breeze0806/go-etl
-[report]:https://goreportcard.com/report/github.com/Breeze0806/go-etl
-[doc-img]:https://godoc.org/github.com/Breeze0806/go-etl?status.svg
-[doc]:https://godoc.org/github.com/Breeze0806/go-etl
+[report-img]:https://goreportcard.com/badge/github.com/lancer2672/go-etl
+[report]:https://goreportcard.com/report/github.com/lancer2672/go-etl
+[doc-img]:https://godoc.org/github.com/lancer2672/go-etl?status.svg
+[doc]:https://godoc.org/github.com/lancer2672/go-etl
 [license-img]: https://img.shields.io/badge/License-Apache%202.0-blue.svg
-[license]: https://github.com/Breeze0806/go-etl/blob/main/LICENSE
-[ci-img]: https://github.com/Breeze0806/go-etl/actions/workflows/Build.yml/badge.svg
-[ci]: https://github.com/Breeze0806/go-etl/actions/workflows/Build.yml
+[license]: https://github.com/lancer2672/go-etl/blob/main/LICENSE
+[ci-img]: https://github.com/lancer2672/go-etl/actions/workflows/Build.yml/badge.svg
+[ci]: https://github.com/lancer2672/go-etl/actions/workflows/Build.yml
 [release-img]: https://img.shields.io/github/tag/Breeze0806/go-etl.svg?label=release
-[release]: https://github.com/Breeze0806/go-etl/releases
+[release]: https://github.com/lancer2672/go-etl/releases
 [release-date-img]: https://img.shields.io/github/release-date/Breeze0806/go-etl.svg
-[release-date]: https://github.com/Breeze0806/go-etl/releases
+[release-date]: https://github.com/lancer2672/go-etl/releases
 [cov-img]: https://codecov.io/gh/Breeze0806/go-etl/branch/main/graph/badge.svg?token=UGb27Nysga
 [cov]: https://codecov.io/gh/Breeze0806/go-etl
 [awesome-img]:https://awesome.re/mentioned-badge.svg

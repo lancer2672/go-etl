@@ -34,9 +34,9 @@ ENV GO_WEB_SITE="go.dev"
 #ENV GO_WEB_SITE="golang.google.cn"
 
 RUN wget -q -O - https://${GO_WEB_SITE}/dl/go1.20.14.linux-amd64.tar.gz | tar -C /usr/local -xzf - \
-    && mkdir -p "$GOPATH/src/github.com/Breeze0806/go-etl" "$GOPATH/bin" "$GOPATH/pkg"
+    && mkdir -p "$GOPATH/src/github.com/lancer2672/go-etl" "$GOPATH/bin" "$GOPATH/pkg"
 
-WORKDIR $GOPATH/src/github.com/Breeze0806/go-etl
+WORKDIR $GOPATH/src/github.com/lancer2672/go-etl
 COPY . .
 
 RUN make dependencies \
@@ -56,7 +56,7 @@ RUN wget https://download.oracle.com/otn_software/linux/instantclient/2118000/in
 RUN wget https://www.sqlite.org/2025/sqlite-tools-linux-x64-3500200.zip && \
     unzip sqlite-tools-linux-x64-3500200.zip -d sqlite3 &&  \
     rm  sqlite-tools-linux-x64-3500200.zip
-COPY --from=builder /goproject/src/github.com/Breeze0806/go-etl/go-etl-linux-x86_64.tar.gz .
+COPY --from=builder /goproject/src/github.com/lancer2672/go-etl/go-etl-linux-x86_64.tar.gz .
 RUN tar zxvf go-etl-linux-x86_64.tar.gz \
     && rm -f go-etl-linux-x86_64.tar.gz
 ENTRYPOINT ["tail", "-f","/dev/null"]

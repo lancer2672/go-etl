@@ -38,7 +38,7 @@ jobs:
         run: |
           docker build . -t go-etl:latest
           docker run -d --name etl go-etl:latest
-          docker cp etl:/goproject/src/github.com/Breeze0806/go-etl/go-etl-${{ github.ref_name }}-linux-x86_64.tar.gz go-etl-${{ github.ref_name }}-linux-x86_64${{ matrix.param }}.tar.gz
+          docker cp etl:/goproject/src/github.com/lancer2672/go-etl/go-etl-${{ github.ref_name }}-linux-x86_64.tar.gz go-etl-${{ github.ref_name }}-linux-x86_64${{ matrix.param }}.tar.gz
       - name: Upload go-etl binary
         uses: softprops/action-gh-release@v2
         with:

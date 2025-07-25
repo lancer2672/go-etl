@@ -1,9 +1,12 @@
-module github.com/Breeze0806/go-etl
+module github.com/lancer2672/go-etl
 
-go 1.20
+go 1.21
+
+toolchain go1.24.2
 
 require (
 	github.com/Breeze0806/go v0.0.0-20241007070500-6a4893c38b81
+	github.com/Breeze0806/go-etl v0.2.2
 	github.com/fatih/color v1.18.0
 	github.com/go-sql-driver/mysql v1.8.1
 	github.com/godror/godror v0.44.0

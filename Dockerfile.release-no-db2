@@ -30,9 +30,9 @@ ENV GO_WEB_SITE="go.dev"
 #ENV GO_WEB_SITE="golang.google.cn"
 
 RUN wget -q -O - https://${GO_WEB_SITE}/dl/go1.20.14.linux-amd64.tar.gz | tar -C /usr/local -xzf -
-RUN mkdir -p "$GOPATH/src/github.com/Breeze0806/go-etl" "$GOPATH/bin" "$GOPATH/pkg"
+RUN mkdir -p "$GOPATH/src/github.com/lancer2672/go-etl" "$GOPATH/bin" "$GOPATH/pkg"
 
-WORKDIR $GOPATH/src/github.com/Breeze0806/go-etl
+WORKDIR $GOPATH/src/github.com/lancer2672/go-etl
 COPY . .
 
 RUN make dependencies
